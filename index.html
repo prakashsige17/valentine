@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Geetha ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="overflow: hidden" id="main-body">
+    <!-- Romantic Background Effects -->
+    <div class="romantic-bg"></div>
+    <!-- ============================================
+       AUTHENTICATION MODAL
+  ============================================ -->
+    <div id="auth-modal">
+      <div class="auth-box">
+        <div class="auth-text">
+          <h2>Hey Beautiful ✨</h2>
+          <p>
+            I made something special just for you. Are you ready to see how much
+            you mean to me?
+          </p>
+        </div>
+        <div class="auth-btn-group">
+          <button class="auth-btn btn-yes" onclick="handleYes()">
+            Yes, Show Me! ❤️
+          </button>
+          <button
+            class="auth-btn btn-no"
+            id="noBtn"
+            onmouseenter="moveNoButton()"
+            ontouchstart="moveNoButton()"
+          >
+            NO...
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================
+       HERO BANNER
+  ============================================ -->
+    <div class="banner-container">
+      <header class="banner" id="top">
+        <div class="hero-particles"></div>
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h1>Geetha</h1>
+          <p>
+            Kothi, you’re not just part of my story… you’re the reason it feels
+            magical
+          </p>
+          <button class="banner-btn" onclick="scrollToSection('gallery')">
+            Explore your Blissfull Journey ↓
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <!-- ============================================
+       MAIN CONTENT
+  ============================================ -->
+    <main class="container">
+      <!-- PHOTO GALLERY -->
+      <section id="gallery">
+        <h2 class="section-title">Beautiful Moments</h2>
+
+        <div class="collage-grid">
+          <div class="photo-card reveal">
+            <img src="images/Authenticity.jpeg" alt="Memory 1" />
+            <div class="photo-overlay">
+              <span class="photo-text">AuthantiCity</span>
+            </div>
+          </div>
+
+          <div class="photo-card reveal">
+            <img src="images/Soulfulness.jpg" alt="Memory 2" />
+            <div class="photo-overlay">
+              <span class="photo-text">Soulfulness</span>
+            </div>
+          </div>
+
+          <div class="photo-card reveal">
+            <img src="images/Laughter.jpg" alt="Memory 3" />
+            <div class="photo-overlay">
+              <span class="photo-text">Laughter</span>
+            </div>
+          </div>
+
+          <div class="photo-card reveal">
+            <img src="images/Adventure.jpg" alt="Memory 4" />
+            <div class="photo-overlay">
+              <span class="photo-text">Adventure</span>
+            </div>
+          </div>
+
+          <div class="photo-card reveal">
+            <img src="images/Together.jpg" alt="Memory 5" />
+            <div class="photo-overlay">
+              <span class="photo-text">Together</span>
+            </div>
+          </div>
+
+          <div class="photo-card reveal">
+            <img src="images/Forever.jpg" alt="Memory 6" />
+            <div class="photo-overlay">
+              <span class="photo-text">Forever</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MESSAGE BOX -->
+      <div class="message-box reveal">
+        <h2>A Message From My Heart</h2>
+        <p>
+          I wanted to create something small to show you how big you are in my
+          life. Every photo here captures a memory I cherish, but the real magic
+          is in all the moments we haven't captured yet. You make every ordinary
+          day extraordinary, and I can't wait to create a lifetime of memories
+          with you. You are, and always will be, my favorite adventure.
+        </p>
+      </div>
+
+      <!-- TEXT WITH IMAGE -->
+      <section class="split-section reveal">
+        <div class="split-text">
+          <h3>Why I Love You</h3>
+          <p>
+            It's not just your beautiful smile or the way you laugh at my
+            terrible jokes. It's how you make even the simplest moments feel
+            magical. The way you light up a room just by being in it. The way
+            you understand me without words.
+          </p>
+          <p>
+            This little corner of the internet is dedicated entirely to you,
+            Kothi. Every pixel, every word, every image is a celebration of us
+            and the incredible journey we're on together.
+          </p>
+        </div>
+        <div class="split-media">
+          <img src="images/us together.png" alt="Us together" />
+        </div>
+      </section>
+
+      <!-- TEXT WITH VIDEO -->
+      <section class="split-section reverse reveal">
+        <div class="split-text">
+          <h3>Our Story in Motion</h3>
+          <p>
+            Sometimes a still photo isn't enough to capture the energy of a
+            moment. This is us in motion—living, laughing, loving. Every second
+            with you feels like a scene from the best movie ever made.
+          </p>
+          <p>
+            Watching this reminds me how incredibly lucky I am to have you by my
+            side. Here's to countless more adventures, and to capturing every
+            beautiful moment along the way.
+          </p>
+        </div>
+        <div class="split-media">
+          <video id="loveVideo" controls>
+            <source src="images/video.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================
+       FOOTER
+  ============================================ -->
+    <footer>
+      <div class="footer-content">
+        <h3>Thank You For Being You</h3>
+        <p>
+          This is just the beginning of our story. I can't wait to see what
+          beautiful chapters we'll write together.
+        </p>
+        <button class="footer-btn" onclick="scrollToSection('top')">
+          Back to Top 🏠
+        </button>
+        <div class="copyright">
+          Made with <span class="heart-icon">❤️</span> for Geetha • Forever &
+          Always
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================
+       JAVASCRIPT
+  ============================================ -->
+    <script src="index.js"></script>
+  </body>
+</html>
